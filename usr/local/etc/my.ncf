@@ -1,0 +1,2 @@
+[mysql]
+socket = /tmp/mysql.sock
