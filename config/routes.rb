@@ -1,4 +1,18 @@
 ShlomoApp::Application.routes.draw do
+
+  root :to => 'pages#index'
+  get "pages/company"
+
+  get "pages/services"
+
+  get "pages/clients"
+
+  get "pages/news"
+
+  get "pages/rrhh"
+
+  get "pages/contact_us"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
