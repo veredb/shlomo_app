@@ -1,0 +1,30 @@
+/* Navigation bar */
+
+nav {
+      float: right;
+    }
+
+nav ul {
+       margin-right: 600px;
+       }
+nav ul li {
+      list-style-type: none;
+      display: inline-block;
+     }
+
+nav ul li a {
+      text-decoration: none;
+      padding: 20px;
+      background-color: grey;
+      }
+
+
+
+
+
+/* div id="parag" */
+#parag {
+       float: right;
+       margin-right: 600px;
+       margin-top: 50px;
+       }

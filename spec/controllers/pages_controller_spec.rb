@@ -2,10 +2,17 @@ require 'spec_helper'
 
 describe PagesController do
 
+  render_views
+
   describe "GET 'company'" do
     it "returns http success" do
       get 'company'
       response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'company'
+      response.should have_selector("title", :content => "Company Page")
     end
   end
 
@@ -14,13 +21,20 @@ describe PagesController do
       get 'services'
       response.should be_success
     end
-  end
-
-  describe "GET 'clients'" do
+    it "should have the right title" do
+      get 'services'
+      response.should have_selector("title", :content => "Services Page")
+    end
+   end
+  
+   describe "GET 'clients'" do
     it "returns http success" do
       get 'clients'
       response.should be_success
     end
+    it "should have the right title" do
+      get 'clients'
+      response.should have_selector("title", :content => "Clients Page")
   end
 
   describe "GET 'news'" do
@@ -43,5 +57,7 @@ describe PagesController do
       response.should be_success
     end
   end
+
+  
 
 end
