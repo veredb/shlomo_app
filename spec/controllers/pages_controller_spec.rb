@@ -35,6 +35,7 @@ describe PagesController do
     it "should have the right title" do
       get 'clients'
       response.should have_selector("title", :content => "Clients Page")
+    end
   end
 
   describe "GET 'news'" do
